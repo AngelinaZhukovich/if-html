@@ -18,9 +18,8 @@ h2 {
   margin-bottom: 20px;
 }
 
-.color-line{
-
-  border: 1px solid #F5BD41;
+.color-line {
+  border: 1px solid #f5bd41;
   width: 100px;
   margin-bottom: 80px;
 }
@@ -29,10 +28,9 @@ h2 {
   display: inline-block;
   height: 185px;
   width: 295px;
-
 }
 
-.img-advantages>img{
+.img-advantages > img {
   margin-bottom: 60px;
 }
 
@@ -40,3 +38,30 @@ h2 {
   margin-left: 105px;
 }
 
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  height: 625px;
+  background-color: #10367c;
+  color: #ffffff;
+}
+.column-footer {
+  width: 400px;
+  margin: 120px 0 65px;
+}
+
+.column-about {
+  margin-left: 100px;
+}
+
+.copyright {
+  margin: 0 0 0 100px;
+}
+
+ul > li {
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 24px;
+}
