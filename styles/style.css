@@ -32,8 +32,10 @@ label {
 
 .header-text {
   color: #ffffff;
-  font-size: 50px;
+  font-size: 51px;
   text-align: left;
+  margin-top: 199px;
+  margin-bottom: 98px;
 }
 
 .search-form {
@@ -42,7 +44,9 @@ label {
   /*width: 1223px;*/
   height: 64px;
 }
-
+.search-form-label{
+  margin-bottom: 25px;
+}
 .header-input-city {
   width: 467px;
   height: 64px;
