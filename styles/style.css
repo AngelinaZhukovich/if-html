@@ -1,0 +1,96 @@
+@import url("fonts.css");
+
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.big-words {
+  font-weight: 500;
+}
+
+.advantages {
+  height: 570px;
+
+  /*text-align: center;*/
+}
+
+h2 {
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.color-line {
+  border: 1px solid #f5bd41;
+  width: 100px;
+  margin-bottom: 80px;
+}
+
+.container-advantages {
+  display: flex;
+  /*justify-content: center;*/
+  /*width: 1440px;*/
+}
+
+.container-advantages p {
+
+  font-size: 24px;
+
+}
+
+.img-advantages {
+  display: flex;
+  flex-direction: column;
+  height: 185px;
+  width: 25%;
+  justify-content: space-around;
+}
+
+.img-advantages > img {
+  margin-bottom: 60px;
+}
+
+
+
+/*.img-advantages-headphones {*/
+/*  margin-left: 105px;*/
+/*}*/
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  height: 625px;
+  background-color: #10367c;
+  color: #ffffff;
+  font-size: 20px;
+
+}
+.column-footer {
+  width: 400px;
+  margin: 120px 0 65px;
+}
+
+.column-about {
+  margin-left: 100px;
+}
+
+.copyright {
+  margin: 0 0 0 100px;
+  font-size: 14px;
+}
+
+ul > li {
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 24px;
+}
