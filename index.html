@@ -2,15 +2,62 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="lesson 4" />
+    <meta name="description" content="lesson 6" />
     <meta name="keywords" content="CSS" />
     <meta name="author" content="Angelina Zhukovich" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
-    <!--    <link rel="icon" href="images/icon/favicon.ico">-->
+    <link rel="icon" href="images/icons/favicon.ico" />
     <title>Title</title>
   </head>
   <body>
+    <div class="top-section">
+      <div class="header">
+        <img src="/images/icons/logo_vector.png" alt="logo" />
+        <h2 class="header-text big-words">
+          Discover stays <br />
+          to live, work or just relax
+        </h2>
+        <div class="search-form">
+          <form>
+            <p>
+              <label for="search-city">Your destination or hotel name</label>
+              <label class="label-calendar" for="calendar"> Check-in — Check-out</label> <br>
+              <input
+                class="header-input-city"
+                id="search-city"
+                type="text"
+                name="search-city"
+                placeholder="New York"
+                required
+              />
+
+
+              <input
+                class="header-input-calendar"
+                id="calendar"
+                type="text"
+                name="search-city"
+                placeholder="Tue 15 Sept — Sat 19 Sept"
+                required
+              />
+
+              <label for="rooms"></label>
+              <input
+                class="header-input-rooms"
+                id="rooms"
+                type="text"
+                name="search-city"
+                placeholder="2 Adults — 0 Children — 1 Room"
+                required
+              />
+
+              <button>Search</button>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
     <div class="advantages">
       <h2 class="big-words">What do we offer</h2>
       <div class="color-line"></div>
