@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="lesson 6" />
+    <meta name="description" content="lesson 7" />
     <meta name="keywords" content="CSS" />
     <meta name="author" content="Angelina Zhukovich" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,24 +12,30 @@
   </head>
   <body>
     <div class="top-section">
-      <div class="header">
-        <div class="sprite1">
+      <div class="header-top-section">
+        <div class="logo">
           <div class="logo-img"></div>
-          <div class="stays">
-            <p>Stays</p>
-            <div class="stays-line"></div>
-          </div>
-
-          <p>Attractions</p>
-          <div class="night-img"></div>
-          <div class="account-img"></div>
         </div>
-
-        <h2 class="header-text big-words">
+        <div class="settings">
+          <div class="sentence">
+            <div class="stays">
+              <p>Stays</p>
+              <div class="color-line"></div>
+            </div>
+            <p>Attractions</p>
+          </div>
+          <div class="personal">
+            <div class="night-img"></div>
+            <div class="account-img"></div>
+          </div>
+        </div>
+      </div>
+      <div class="header-wrapper">
+        <h2 class="header-text">
           Discover stays <br />
           to live, work or just relax
         </h2>
-        <div class="search-form">
+        <div class="header-search-form">
           <form>
             <div class="search-form-label">
               <label for="search-city">Your destination or hotel name</label>
@@ -37,7 +43,7 @@
                 Check-in — Check-out</label
               >
             </div>
-            <p class="position-forms">
+            <p class="header-position-forms">
               <input
                 class="header-input-city"
                 id="search-city"
@@ -55,7 +61,6 @@
                 placeholder="Tue 15 Sept — Sat 19 Sept"
                 required
               />
-
               <label for="rooms"></label>
               <input
                 class="header-input-rooms"
@@ -65,41 +70,54 @@
                 placeholder="2 Adults — 0 Children — 1 Room"
                 required
               />
-
               <button>Search</button>
             </p>
           </form>
         </div>
-        <div class="pay-phone">
-          <div class="google-pay"></div>
-          <div class="app-store"></div>
-        </div>
+      </div>
+      <div class="header-pay-phone">
+        <svg class="img-header _svg">
+          <use href="images/icons/icons_svg/sprite.svg#google-pay" />
+        </svg>
+        <svg class="img-header _svg">
+          <use href="images/icons/icons_svg/sprite.svg#apple-pay" />
+        </svg>
       </div>
     </div>
-    <div class="advantages">
-      <h2 class="big-words">What do we offer</h2>
-      <div class="color-line"></div>
+    <div class="advantages-box">
+      <div class="advantages">
+        <h2 class="big-words">What do we offer</h2>
+        <div class="color-line color-line-advantages-box"></div>
+      </div>
       <div class="container-advantages">
-        <div class="img-advantages img-advantages-headphones">
-          <img src="images/headphones.png" alt="headphones" />
-          <p>Support 24/7</p>
+        <div class="img-advantages _svg _headphones">
+          <svg class="img-advantages _svg">
+            <use href="images/icons/icons_svg/sprite.svg#headphones" />
+          </svg>
+          <h3>Support 24/7</h3>
         </div>
-        <div class="img-advantages">
-          <img src="images/communication.png" alt="communication" />
-          <p>Communicate directly</p>
+        <div class="img-advantages _svg _communication">
+          <svg class="img-advantages _svg">
+            <use href="../images/icons/icons_svg/sprite.svg#communication" />
+          </svg>
+          <h3>Communicate directly</h3>
         </div>
-        <div class="img-advantages">
-          <img src="images/computer.png" alt="computer" />
-          <p>Book online</p>
+        <div class="img-advantages _svg _computer">
+          <svg class="img-advantages _svg">
+            <use href="images/icons/icons_svg/sprite.svg#computer" />
+          </svg>
+          <h3>Book online</h3>
         </div>
-        <div class="img-advantages">
-          <img src="images/cool.png" alt="cool" />
-          <p>Real guest reviews</p>
+        <div class="img-advantages _svg _like">
+          <svg class="img-advantages _svg">
+            <use href="images/icons/icons_svg/sprite.svg#like" />
+          </svg>
+          <h3>Real guest reviews</h3>
         </div>
       </div>
     </div>
     <div class="footer">
-      <div class="column-footer column-about">
+      <div class="list-heading">
         <ul>
           <li class="big-words">About</li>
           <li>How Triphouse works</li>
@@ -108,7 +126,7 @@
           <li>Terms</li>
         </ul>
       </div>
-      <div class="column-footer">
+      <div class="list-heading">
         <ul>
           <li class="big-words">Property types</li>
           <li>Guest houses</li>
@@ -119,7 +137,7 @@
           <li>Hostels</li>
         </ul>
       </div>
-      <div class="column-footer">
+      <div class="list-heading">
         <ul>
           <li class="big-words">Support</li>
           <li>Contact Customer Service</li>
@@ -127,9 +145,7 @@
         </ul>
       </div>
       <div class="copyright">
-        <ul>
-          <li>© 2022Triphouse, Inc. All rights reserved</li>
-        </ul>
+        <p>© 2022Triphouse, Inc. All rights reserved</p>
       </div>
     </div>
   </body>
