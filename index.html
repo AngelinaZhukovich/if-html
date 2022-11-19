@@ -2,7 +2,152 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="lesson 7" />
+    <meta name="keywords" content="CSS" />
+    <meta name="author" content="Angelina Zhukovich" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="icon" href="images/icons/favicon.ico" />
     <title>Title</title>
   </head>
-  <body></body>
+  <body>
+    <div class="top-section">
+      <div class="header-top-section">
+        <div class="logo">
+          <div class="logo-img"></div>
+        </div>
+        <div class="settings">
+          <div class="sentence">
+            <div class="stays">
+              <p>Stays</p>
+              <div class="color-line"></div>
+            </div>
+            <p>Attractions</p>
+          </div>
+          <div class="personal">
+            <div class="night-img"></div>
+            <div class="account-img"></div>
+          </div>
+        </div>
+      </div>
+      <div class="header-wrapper">
+        <h1 class="header-wrapper__text">
+          Discover stays <br />
+          to live, work or just relax
+        </h1>
+        <div class="header-search">
+          <form>
+            <div class="search-form-label">
+              <label for="search-city">Your destination or hotel name</label>
+              <label for="calendar">
+                Check-in — Check-out
+              </label>
+            </div>
+            <p class="header-search__position">
+              <input
+                class="header-input__city"
+                id="search-city"
+                type="text"
+                name="search-city"
+                placeholder="New York"
+                required
+              />
+              <input
+                class="header-input__calendar"
+                id="calendar"
+                type="text"
+                name="search-date"
+                placeholder="Tue 15 Sept — Sat 19 Sept"
+                required
+              />
+              <label for="rooms"></label>
+              <input
+                class="header-input__rooms"
+                id="rooms"
+                type="text"
+                name="search-room"
+                placeholder="2 Adults — 0 Children — 1 Room"
+                required
+              />
+              <button>Search</button>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="header-pay-phone">
+        <svg class="img-header _svg">
+          <use href="images/icons/icons_svg/sprite.svg#google-pay" />
+        </svg>
+        <svg class="img-header _svg">
+          <use href="images/icons/icons_svg/sprite.svg#apple-pay" />
+        </svg>
+      </div>
+    </div>
+    <div class="advantages-box">
+      <div class="advantages">
+        <h2 class="big-words">What do we offer</h2>
+        <div class="color-line color-line-advantages-box"></div>
+      </div>
+      <div class="container-advantages">
+        <div class="img-advantages _svg _headphones">
+          <svg class="img-advantages _svg">
+            <use href="images/icons/icons_svg/sprite.svg#headphones" />
+          </svg>
+          <p>Support 24/7</p>
+        </div>
+        <div class="img-advantages _svg _communication">
+          <svg class="img-advantages _svg">
+            <use href="../images/icons/icons_svg/sprite.svg#communication" />
+          </svg>
+          <p>Communicate directly</p>
+        </div>
+        <div class="img-advantages _svg _computer">
+          <svg class="img-advantages _svg">
+            <use href="images/icons/icons_svg/sprite.svg#computer" />
+          </svg>
+          <p>Book online</p>
+        </div>
+        <div class="img-advantages _svg _like">
+          <svg class="img-advantages _svg">
+            <use href="images/icons/icons_svg/sprite.svg#like" />
+          </svg>
+          <p>Real guest reviews</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-wrapper">
+        <div class="list-heading">
+          <ul>
+            <li class="big-words"><h4>About</h4></li>
+            <li>How Triphouse works</li>
+            <li>Careers</li>
+            <li>Privacy</li>
+            <li>Terms</li>
+          </ul>
+        </div>
+        <div class="list-heading">
+          <ul>
+            <li class="big-words"><h4>Property types</h4></li>
+            <li>Guest houses</li>
+            <li>Hotels</li>
+            <li>Apartments</li>
+            <li>Villas</li>
+            <li>Holiday homes</li>
+            <li>Hostels</li>
+          </ul>
+        </div>
+        <div class="list-heading">
+          <ul>
+            <li class="big-words"><h4>Support</h4></li>
+            <li>Contact Customer Service</li>
+            <li>FAQ</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <p>© 2022Triphouse, Inc. All rights reserved</p>
+      </div>
+    </div>
+  </body>
 </html>
