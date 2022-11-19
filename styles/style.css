@@ -22,6 +22,21 @@ h2 {
   font-weight: 500;
 }
 
+label {
+  color: #ffffff;
+}
+
+button {
+  height: 64px;
+  text-align: center;
+  background-color: #3077c6;
+  color: #ffffff;
+  width: 192px;
+  border-radius: 8px;
+  border: none;
+  font-size: 24px;
+}
+
 .header-text {
   color: #ffffff;
   font-size: 51px;
@@ -31,9 +46,10 @@ h2 {
 }
 
 .top-section {
-  background: url("/images/top-section-background.png") no-repeat;
+  background-image: url("/images/top-section-background.png");
+  background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
+  height: 100vh;
   width: 100vw;
 }
 
@@ -63,7 +79,8 @@ h2 {
 }
 
 .color-line {
-  border: 1px solid #f5bd41;
+  border: 2px solid #f5bd41;
+  background-color: #f5bd41;
   width: 50px;
   text-align: center;
 }
@@ -100,14 +117,6 @@ h2 {
   width: 40px;
   height: 40px;
   background-position-x: -235px;
-}
-
-label {
-  color: #ffffff;
-}
-
-form {
-  margin: 0;
 }
 
 .header-search-form {
@@ -155,17 +164,6 @@ form {
   font-size: 18px;
 }
 
-button {
-  height: 64px;
-  text-align: center;
-  background-color: #3077c6;
-  color: #ffffff;
-  width: 192px;
-  border-radius: 8px;
-  border: none;
-  font-size: 24px;
-}
-
 .header-pay-phone {
   display: flex;
   margin: 100px;
@@ -208,6 +206,7 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  font-size: 24px;
 }
 
 .img-advantages ._svg {
@@ -216,19 +215,20 @@ button {
 }
 
 .footer {
-  display: flex;
-  flex-wrap: wrap;
   height: 625px;
   background-color: #10367c;
   color: #ffffff;
+  padding-left: 105px;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   font-size: 20px;
 }
 
 .list-heading {
   width: 400px;
   margin: 120px 0 65px;
-}
-
-.copyright {
-  margin: 0 0 0 100px;
 }
