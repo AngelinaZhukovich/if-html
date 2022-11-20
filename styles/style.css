@@ -40,7 +40,7 @@ button {
 .container {
   max-width: 1240px;
   margin: 0 auto;
-  padding: 51px 104px 124px
+  padding: 51px 104px 124px;
 }
 
 .top-section {
@@ -48,7 +48,6 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-
 }
 
 .header-top-section {
@@ -209,4 +208,37 @@ button {
 
 .list-heading {
   width: 400px;
+}
+
+@media (max-width: 360px) {
+  .container {
+  padding: 0;
+  }
+
+  .advantages-box{
+    height: 641px;
+    justify-content: normal;
+    padding-top: 24px;
+    padding-bottom: 40px;
+    gap: 34px;
+  }
+
+  .big-words{
+    font-size: 28px;
+  }
+
+  .container-advantages{
+    height: 104px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 30px;
+  }
+
+  .container-advantages p{
+    font-size: 15px;
+  }
+
+  .img-advantages{
+    gap: 15px;
+  }
 }
