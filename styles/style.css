@@ -38,15 +38,16 @@ button {
 }
 
 .container {
-  max-width: 1240px;
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 51px 104px 124px;
+  padding: 51px 104px 104px;
 }
 
 .top-section {
   background-image: url("/images/top-section-background.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position-y: -145px;
   height: 100vh;
 }
 
@@ -118,6 +119,10 @@ button {
   flex-wrap: wrap;
 }
 
+.header-search input {
+  padding: 0;
+}
+
 .search-form-label {
   margin-bottom: 25px;
 }
@@ -136,6 +141,8 @@ button {
   border-radius: 8px;
   border: none;
   font-size: 18px;
+  margin-left: -5px;
+  margin-right: -5px;
 }
 
 .header-input__rooms {
@@ -145,11 +152,12 @@ button {
   border-radius: 8px;
   border: none;
   font-size: 18px;
+  margin-right: -5px;
 }
 
 .header-pay-phone {
   display: flex;
-  padding: 130px 0;
+  padding-top: 120px;
   justify-content: center;
 }
 
@@ -212,10 +220,10 @@ button {
 
 @media (max-width: 360px) {
   .container {
-  padding: 0;
+    padding: 0;
   }
 
-  .advantages-box{
+  .advantages-box {
     height: 641px;
     justify-content: normal;
     padding-top: 24px;
@@ -223,22 +231,22 @@ button {
     gap: 34px;
   }
 
-  .big-words{
+  .big-words {
     font-size: 28px;
   }
 
-  .container-advantages{
+  .container-advantages {
     height: 104px;
     flex-direction: column;
     flex-wrap: nowrap;
     gap: 30px;
   }
 
-  .container-advantages p{
+  .container-advantages p {
     font-size: 15px;
   }
 
-  .img-advantages{
+  .img-advantages {
     gap: 15px;
   }
 }
