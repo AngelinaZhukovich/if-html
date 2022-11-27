@@ -1,9 +1,14 @@
 @import url("fonts.css");
-@import url("all.min.css");
 
 * {
   margin: 0;
   box-sizing: border-box;
+}
+
+.label {
+  position: absolute;
+  left: 0;
+  top: -20px;
 }
 
 body {
@@ -26,19 +31,15 @@ label {
   color: #ffffff;
 }
 
-button {
-  height: 64px;
-  text-align: center;
-  background-color: #3077c6;
-  color: #ffffff;
-  width: 192px;
+input {
+  height: 100%;
   border-radius: 8px;
   border: none;
-  font-size: 24px;
 }
 
 .container {
   max-width: 1440px;
+  width: 100%;
   margin: 0 auto;
   padding: 51px 104px 104px;
 }
@@ -47,7 +48,7 @@ button {
   background-image: url("/images/top-section-background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: -145px;
+  /*background-position-y: -145px;*/
   height: 100vh;
 }
 
@@ -69,13 +70,22 @@ button {
   gap: 48px;
 }
 
-.settings p {
-  color: #ffffff;
-  font-size: 24px;
-}
 .sentence {
   display: flex;
   gap: 24px;
+}
+
+.sentence a {
+  color: #ffffff;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.block-color-line {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
 }
 
 .color-line {
@@ -123,46 +133,58 @@ button {
   padding: 0;
 }
 
-.search-form-label {
-  margin-bottom: 25px;
+.form {
+  display: flex;
+  width: 100%;
+  background-color: #f3f3f4;
+  border-radius: 8px;
 }
 
-.header-input__city {
-  width: 467px;
-  height: 64px;
-  border-radius: 8px;
-  border: none;
-  font-size: 18px;
+.input-wrapper {
+  position: relative;
 }
 
-.header-input__calendar {
-  width: 259px;
-  height: 64px;
-  border-radius: 8px;
-  border: none;
-  font-size: 18px;
-  margin-left: -5px;
-  margin-right: -5px;
+.city-wrapper {
+  max-width: 470px;
+  width: 100%;
 }
 
-.header-input__rooms {
-  width: 314px;
-  height: 64px;
-  text-align: center;
-  border-radius: 8px;
-  border: none;
-  font-size: 18px;
-  margin-right: -5px;
+.calendar-wrapper {
+  max-width: 260px;
+  width: 100%;
+}
+
+.rooms-wrapper {
+  max-width: 314px;
+  width: 100%;
+}
+
+.header-search input {
+  width: 100%;
 }
 
 .header-pay-phone {
   display: flex;
   padding-top: 120px;
   justify-content: center;
+  gap: 15px;
 }
 
-.img-header._svg {
+.header-pay-phone svg {
+  height: 40px;
   width: 135px;
+}
+
+.form-button {
+  height: 64px;
+  max-width: 192px;
+  width: 100%;
+  text-align: center;
+  background-color: #3077c6;
+  color: #ffffff;
+  border-radius: 8px;
+  border: none;
+  font-size: 24px;
 }
 
 .advantages-box {
@@ -218,11 +240,19 @@ button {
   width: 400px;
 }
 
-@media (max-width: 360px) {
+.list-heading a {
+  color: #ffffff;
+  /*font-size: 24px;*/
+  text-decoration: none;
+}
+
+@media (max-width: 925px) {
   .container {
     padding: 0;
   }
+}
 
+@media (max-width: 360px) {
   .advantages-box {
     height: 641px;
     justify-content: normal;
@@ -231,7 +261,7 @@ button {
     gap: 34px;
   }
 
-  .big-words {
+  .large-subtitle {
     font-size: 28px;
   }
 
