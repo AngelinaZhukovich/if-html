@@ -1,5 +1,9 @@
 @import url("fonts.css");
 
+:root{
+  --color-general-white: #FFFFFF;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -8,7 +12,7 @@
 .label {
   position: absolute;
   left: 0;
-  top: -20px;
+  top: -45px;
 }
 
 body {
@@ -28,7 +32,7 @@ h2 {
 }
 
 label {
-  color: #ffffff;
+  color: var(--color-general-white);
 }
 
 input {
@@ -41,7 +45,7 @@ input {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
-  padding: 51px 104px 104px;
+  padding: 51px 104px 0 104px;
 }
 
 .top-section {
@@ -76,7 +80,7 @@ input {
 }
 
 .sentence a {
-  color: #ffffff;
+  color: var(--color-general-white);
   font-size: 24px;
   text-decoration: none;
 }
@@ -117,10 +121,10 @@ input {
 }
 
 .header-wrapper__text {
-  color: #ffffff;
+  color: var(--color-general-white);
   font-size: 51px;
-  margin-top: 120px;
-  margin-bottom: 20px;
+  margin-top: 202px;
+  margin-bottom: 145px;
 }
 
 .header-search {
@@ -165,7 +169,7 @@ input {
 
 .header-pay-phone {
   display: flex;
-  padding-top: 120px;
+  padding-top: 85px;
   justify-content: center;
   gap: 15px;
 }
@@ -181,7 +185,7 @@ input {
   width: 100%;
   text-align: center;
   background-color: #3077c6;
-  color: #ffffff;
+  color: var(--color-general-white);
   border-radius: 8px;
   border: none;
   font-size: 24px;
@@ -192,7 +196,7 @@ input {
   flex-direction: column;
   flex-wrap: wrap;
   height: 570px;
-  background-color: #ffffff;
+  background-color: var(--color-general-white);
   justify-content: space-evenly;
 }
 
@@ -227,13 +231,14 @@ input {
 .footer {
   height: 625px;
   background-color: #10367c;
-  color: #ffffff;
+  color: var(--color-general-white);
 }
 
 .footer-wrapper {
   display: flex;
   justify-content: space-between;
   font-size: 20px;
+  padding-top: 120px;
 }
 
 .list-heading {
@@ -241,12 +246,17 @@ input {
 }
 
 .list-heading a {
-  color: #ffffff;
+  color: var(--color-general-white);
   /*font-size: 24px;*/
   text-decoration: none;
 }
 
-@media (max-width: 925px) {
+.footer-info{
+  padding-top: 64px;
+}
+
+
+  @media (max-width: 925px) {
   .container {
     padding: 0;
   }
@@ -278,5 +288,9 @@ input {
 
   .img-advantages {
     gap: 15px;
+  }
+
+  ul li{
+    display: none;
   }
 }
