@@ -20,6 +20,11 @@ body {
   font-weight: 400;
 }
 
+
+ul {
+  margin-left: -40px;
+}
+
 li {
   margin-bottom: 24px;
   list-style-type: none;
@@ -134,7 +139,8 @@ input {
 }
 
 .header-search input {
-  padding: 0;
+  font-size: 18px;
+  padding: 0 0 0 24px;
 }
 
 .form {
@@ -156,6 +162,10 @@ input {
 .calendar-wrapper {
   max-width: 260px;
   width: 100%;
+}
+
+input:focus {
+  border: solid 3px #f5bd41;
 }
 
 .rooms-wrapper {
@@ -245,6 +255,10 @@ input {
   width: 400px;
 }
 
+.list-heading h4 {
+  margin-bottom: 24px;
+}
+
 .list-heading a {
   color: var(--color-general-white);
   /*font-size: 24px;*/
@@ -264,9 +278,17 @@ input {
   .container {
     padding: 0;
   }
+    .header-pay-phone{
+      padding-top: 40px;
+    }
 }
 
 @media (max-width: 360px) {
+  .header-wrapper__text {
+  font-size: 30px;
+    margin-top: 52px;
+    margin-bottom: 70px;
+  }
 
   .advantages-box {
     height: 641px;
@@ -315,6 +337,7 @@ input {
 
   .list-heading h4{
     font-size: 15px;
+    margin-bottom: 24px;
   }
 
   .logo-img{
