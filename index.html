@@ -25,7 +25,7 @@
             </div>
             <div class="personal">
               <a href="#" class="night-img"> </a>
-              <a href="#" class="account-img"></a>
+              <a href="#" class="account-img"> </a>
             </div>
           </div>
         </header>
@@ -44,8 +44,8 @@
                 required
               />
               <label class="label" for="city"
-                >Your destination or hotel name</label
-              >
+                >Your destination or hotel name
+              </label>
             </div>
             <div class="input-wrapper calendar-wrapper">
               <input
@@ -53,12 +53,13 @@
                 type="text"
                 name="search-date"
                 placeholder="Tue 15 Sept — Sat 19 Sept"
-                require
+                required
               />
               <label class="label" for="calendar">Check-in — Check-out</label>
             </div>
             <div class="input-wrapper rooms-wrapper">
               <input
+                id="room"
                 type="number"
                 name="search-room"
                 placeholder="2 Adults — 0 Children — 1 Room"
@@ -88,25 +89,25 @@
         <div class="color-line"></div>
       </div>
       <div class="container-advantages">
-        <div class="img-advantages _svg _headphones">
+        <div class="img-advantages _svg _headphones col-lg-3 col-md-6 col-s-6">
           <svg class="img-advantages _svg">
             <use href="images/icons/icons_svg/sprite.svg#headphones" />
           </svg>
           <p>Support 24/7</p>
         </div>
-        <div class="img-advantages _svg _communication">
+        <div class="img-advantages _svg _communication col-lg-3 col-md-6 col-s-6">
           <svg class="img-advantages _svg">
             <use href="../images/icons/icons_svg/sprite.svg#communication" />
           </svg>
           <p>Communicate directly</p>
         </div>
-        <div class="img-advantages _svg _computer">
+        <div class="img-advantages _svg _computer col-lg-3 col-md-6 col-s-6">
           <svg class="img-advantages _svg">
             <use href="images/icons/icons_svg/sprite.svg#computer" />
           </svg>
           <p>Book online</p>
         </div>
-        <div class="img-advantages _svg _like">
+        <div class="img-advantages _svg _like col-lg-3 col-md-6 col-s-6">
           <svg class="img-advantages _svg">
             <use href="images/icons/icons_svg/sprite.svg#like" />
           </svg>
@@ -120,36 +121,30 @@
       </svg>
       <div class="container">
         <div class="footer-wrapper">
-          <div class="list-heading">
-            <h4>About</h4>
-            <ul>
-              <li><a href="#">How Triphouse works</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Privacy</a></li>
-              <li><a href="#">Terms </a></li>
-            </ul>
-          </div>
-          <div class="list-heading">
-            <h4>Property types</h4>
-            <ul>
-              <li><a href="#">Guest houses</a></li>
-              <li><a href="#">Hotels</a></li>
-              <li><a href="#">Apartments</a></li>
-              <li><a href="#">Villas</a></li>
-              <li><a href="#">Holiday homes </a></li>
-              <li><a href="#">Hostels</a></li>
-            </ul>
-          </div>
-          <div class="list-heading">
-            <h4>Support</h4>
-            <ul>
-              <li><a href="#">Contact Customer Service</a></li>
-              <li><a href="#">FAQ</a></li>
-            </ul>
-          </div>
+          <ul class="list-item col-lg-4 col-md-3 col-s-1">
+            <li class="list-heading">About</li>
+            <li class="list-item-none"><a href="#">How Triphouse works</a></li>
+            <li class="list-item-none"><a href="#">Careers</a></li>
+            <li class="list-item-none"><a href="#">Privacy</a></li>
+            <li class="list-item-none"><a href="#">Terms </a></li>
+          </ul>
+          <ul class="list-item col-lg-4 col-md-4 col-s-2">
+            <li class="list-heading">Property types</li>
+            <li class="list-item-none"><a href="#">Guest houses</a></li>
+            <li class="list-item-none"><a href="#">Hotels</a></li>
+            <li class="list-item-none"><a href="#">Apartments</a></li>
+            <li class="list-item-none"><a href="#">Villas</a></li>
+            <li class="list-item-none"><a href="#">Holiday homes </a></li>
+            <li class="list-item-none"><a href="#">Hostels</a></li>
+          </ul>
+          <ul class="list-item col-lg-4 col-md-3 col-s-1">
+            <li class="list-heading">Support</li>
+            <li class="list-item-none"><a href="#">Contact Customer Service</a></li>
+            <li class="list-item-none"><a href="#">FAQ</a></li>
+          </ul>
         </div>
         <div>
-          <p class="footer-info">© 2022Triphouse, Inc. All rights reserved</p>
+          <p class="footer-info col-lg-12">© 2022Triphouse, Inc. All rights reserved</p>
         </div>
       </div>
     </div>
