@@ -12,9 +12,13 @@
   </head>
   <body>
     <div class="top-section">
-      <div class="container">
+      <div class="container container-search-mob">
         <header class="header-top-section">
-          <div class="logo-top-section"></div>
+          <div>
+            <svg class="logo-img-lg logo-img-s">
+              <use href="images/icons/icons_svg/sprite.svg#logo-vector" />
+            </svg>
+          </div>
           <div class="settings">
             <div class="sentence">
               <div class="block-color-line">
@@ -66,8 +70,37 @@
                 required
               />
             </div>
+            <label for="room"></label>
             <button class="form-button">Search</button>
           </form>
+        </div>
+        <div class="header-search-mob">
+          <div>
+            <input
+              class="col-s-6 input-height border-input"
+              id="city-mob"
+              type="search"
+              name="search-city"
+              placeholder="Your destination or hotel name"
+              required
+            />
+            <label class="label" for="city-mob"> </label>
+          </div>
+          <div class="check-in-out-form">
+            <input class="col-s-3 input-height border-input" id="check-in" name="check-in" placeholder="Tue 15 Sept 2020" />
+            <label for="check-in">Check-in date</label>
+            <input class="col-s-3 input-height border-input" id="check-out" name="check-out" placeholder="Sat 19 Sept 2020" />
+            <label class="check-out-position" for="check-out">Check-out date</label>
+          </div>
+          <div class="rooms-form-mob">
+            <input class="col-s-2 input-height" id="adults" placeholder="2" />
+            <label for="adults">Adults</label>
+            <input class="col-s-2 input-height" id="children" placeholder="0" />
+            <label class="children-label-position" for="children">Children</label>
+            <input class="col-s-2 input-height" id="rooms-mob" placeholder="1" />
+            <label class="rooms-label-position" for="rooms-mob">Rooms</label>
+          </div>
+          <button class="form-button-mob">Search</button>
         </div>
         <div class="header-pay-phone">
           <a href="https://play.google.com/" target="_blank">
@@ -95,7 +128,9 @@
           </svg>
           <p>Support 24/7</p>
         </div>
-        <div class="img-advantages _svg _communication col-lg-3 col-md-6 col-s-6">
+        <div
+          class="img-advantages _svg _communication col-lg-3 col-md-6 col-s-6"
+        >
           <svg class="img-advantages _svg">
             <use href="../images/icons/icons_svg/sprite.svg#communication" />
           </svg>
@@ -139,12 +174,16 @@
           </ul>
           <ul class="list-item col-lg-4 col-md-3 col-s-1">
             <li class="list-heading">Support</li>
-            <li class="list-item-none"><a href="#">Contact Customer Service</a></li>
+            <li class="list-item-none">
+              <a href="#">Contact Customer Service</a>
+            </li>
             <li class="list-item-none"><a href="#">FAQ</a></li>
           </ul>
         </div>
         <div>
-          <p class="footer-info col-lg-12">© 2022Triphouse, Inc. All rights reserved</p>
+          <p class="footer-info col-lg-12">
+            © 2022Triphouse, Inc. All rights reserved
+          </p>
         </div>
       </div>
     </div>
