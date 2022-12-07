@@ -19,17 +19,21 @@
               <use href="images/icons/icons_svg/sprite.svg#logo-vector" />
             </svg>
           </div>
-          <div class="settings">
-            <div class="sentence">
-              <div class="block-color-line">
-                <a href="#">Stays</a>
-                <div class="color-line"></div>
-              </div>
-              <a href="#">Attractions</a>
+          <div class="top-section-settings">
+            <div class="top-section-sentence">
+              <a class="color-line" href="#">Stays</a>
+              <a class="color-line" href="#">Attractions</a>
             </div>
-            <div class="personal">
-              <a href="#" class="night-img"> </a>
-              <a href="#" class="account-img"> </a>
+            <div class="top-section-personal">
+              <svg class="top-section_img-night">
+                <use href="images/icons/icons_svg/sprite.svg#night" />
+              </svg>
+              <svg class="top-section_img-account">
+                <use href="images/icons/icons_svg/sprite.svg#account" />
+              </svg>
+              <svg class="top-section_img-menu">
+                <use href="images/icons/icons_svg/sprite.svg#menu" />
+              </svg>
             </div>
           </div>
         </header>
@@ -37,44 +41,42 @@
           Discover stays <br />
           to live, work or just relax
         </h1>
-        <div class="header-search">
-          <form class="form">
-            <div class="input-wrapper city-wrapper">
-              <input
-                id="city"
-                type="text"
-                name="search-city"
-                placeholder="New York"
-                required
-              />
-              <label class="label" for="city"
-                >Your destination or hotel name
-              </label>
-            </div>
-            <div class="input-wrapper calendar-wrapper">
-              <input
-                id="calendar"
-                type="text"
-                name="search-date"
-                placeholder="Tue 15 Sept — Sat 19 Sept"
-                required
-              />
-              <label class="label" for="calendar">Check-in — Check-out</label>
-            </div>
-            <div class="input-wrapper rooms-wrapper">
-              <input
-                id="room"
-                type="number"
-                name="search-room"
-                placeholder="2 Adults — 0 Children — 1 Room"
-                required
-              />
-            </div>
-            <label for="room"></label>
-            <button class="form-button">Search</button>
-          </form>
-        </div>
-        <div class="header-search-mob">
+        <form class="form header-search form-mobile-display">
+          <div class="input-wrapper city-wrapper col-md-12">
+            <input
+              id="city"
+              type="text"
+              name="search-city"
+              placeholder="New York"
+              required
+            />
+            <label class="label" for="city"
+              >Your destination or hotel name
+            </label>
+          </div>
+          <div class="input-wrapper calendar-wrapper col-md-12">
+            <input
+              id="calendar"
+              type="text"
+              name="search-date"
+              placeholder="Tue 15 Sept — Sat 19 Sept"
+              required
+            />
+            <label class="label" for="calendar">Check-in — Check-out</label>
+          </div>
+          <div class="input-wrapper rooms-wrapper">
+            <input
+              id="room"
+              type="number"
+              name="search-room"
+              placeholder="2 Adults — 0 Children — 1 Room"
+              required
+            />
+          </div>
+          <label for="room"></label>
+          <button class="form-button col-md-12">Search</button>
+        </form>
+        <form class="header-search-mob">
           <div>
             <input
               class="col-s-6 input-height border-input"
@@ -87,21 +89,55 @@
             <label class="label" for="city-mob"> </label>
           </div>
           <div class="check-in-out-form">
-            <input class="col-s-3 input-height border-input" id="check-in" name="check-in" placeholder="Tue 15 Sept 2020" />
-            <label for="check-in">Check-in date</label>
-            <input class="col-s-3 input-height border-input" id="check-out" name="check-out" placeholder="Sat 19 Sept 2020" />
-            <label class="check-out-position" for="check-out">Check-out date</label>
+            <div class="form-mobile-input-wrapper col-s-3">
+              <input
+                class="input-height border-input col-s-6"
+                id="check-in"
+                name="check-in"
+                placeholder="Tue 15 Sept 2020"
+              />
+              <label class="check-out-position" for="check-in">
+                Check-in date
+              </label>
+            </div>
+            <div class="form-mobile-input-wrapper col-s-3">
+              <input
+                class="input-height border-input col-s-6"
+                id="check-out"
+                name="check-out"
+                placeholder="Sat 19 Sept 2020"
+              />
+              <label class="check-out-position" for="check-out">
+                Check-out date
+              </label>
+            </div>
           </div>
-          <div class="rooms-form-mob">
-            <input class="col-s-2 input-height" id="adults" placeholder="2" />
-            <label for="adults">Adults</label>
-            <input class="col-s-2 input-height" id="children" placeholder="0" />
-            <label class="children-label-position" for="children">Children</label>
-            <input class="col-s-2 input-height" id="rooms-mob" placeholder="1" />
-            <label class="rooms-label-position" for="rooms-mob">Rooms</label>
+          <div class="check-in-out-form col-s-6">
+            <div class="form-mobile-input-wrapper col-s-2">
+              <input class="input-height col-s-6" id="adults" placeholder="2" />
+              <label class="check-out-position" for="adults"> Adults </label>
+            </div>
+            <div class="form-mobile-input-wrapper col-s-2">
+              <input
+                class="input-height col-s-6"
+                id="children"
+                placeholder="0"
+              />
+              <label class="check-out-position" for="children">
+                Children
+              </label>
+            </div>
+            <div class="form-mobile-input-wrapper col-s-2">
+              <input
+                class="input-height col-s-6"
+                id="rooms-mob"
+                placeholder="1"
+              />
+              <label class="check-out-position" for="rooms-mob"> Rooms </label>
+            </div>
           </div>
           <button class="form-button-mob">Search</button>
-        </div>
+        </form>
         <div class="header-pay-phone">
           <a href="https://play.google.com/" target="_blank">
             <svg>
@@ -117,9 +153,8 @@
       </div>
     </div>
     <div class="advantages-box container">
-      <div class="advantages block-color-line">
-        <h2 class="large-subtitle">What do we offer</h2>
-        <div class="color-line"></div>
+      <div class="advantages">
+        <h2 class="large-subtitle color-line">What do we offer</h2>
       </div>
       <div class="container-advantages">
         <div class="img-advantages _svg _headphones col-lg-3 col-md-6 col-s-6">

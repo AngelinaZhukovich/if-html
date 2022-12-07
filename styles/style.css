@@ -8,18 +8,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+button {
+  border: none;
 }
 
 li {
   list-style-type: none;
 }
 
-li a {
+a {
   color: var(--color-general-white);
   text-decoration: none;
 }
@@ -33,11 +33,15 @@ h2 {
 label {
   color: var(--color-general-white);
 }
-
+/*TODO добавить классы input */
 input {
   height: 100%;
   border-radius: 8px;
   border: none;
+}
+
+input:focus {
+  outline: none;
 }
 
 .col-lg-1 {
@@ -88,16 +92,28 @@ input {
   width: 100%;
 }
 
+/*.color-line:hover:after {*/
+/*  content: "";*/
+/*  display: block;*/
+/*  margin: 0 auto;*/
+/*  position: absolute;*/
+/*  margin-top: 8px;*/
+/*  background-color: #f5bd41;*/
+/*  height: 4px;*/
+/*  width: 50px;*/
+/*}*/
+
 .label {
   position: absolute;
-  left: 0;
+  left: 12px;
   top: -45px;
 }
 
 .container {
-  max-width: 1232px;
+  max-width: 1264px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 16px;
 }
 
 .top-section {
@@ -118,72 +134,59 @@ input {
   display: flex;
   height: 40px;
   width: 205px;
-  fill:#3077C6;
+  fill: #3077c6;
 }
 
-.settings {
+.top-section-settings {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   gap: 48px;
 }
 
-.sentence {
+.top-section-personal {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.top-section-sentence {
   display: flex;
   gap: 24px;
 }
 
-.sentence a {
+.top-section-sentence a {
   color: var(--color-general-white);
   font-size: 24px;
   text-decoration: none;
 }
 
-.block-color-line {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-}
-
-.color-line {
-  border: 2px solid #f5bd41;
-  background-color: #f5bd41;
-  width: 50px;
-}
-
-.personal {
-  display: flex;
-  gap: 24px;
-}
-
-.night-img {
-  background-image: url("../images/Logo-sprite.png");
-  background-repeat: no-repeat;
-  width: 30px;
+.top-section_img-night {
   height: 30px;
-  background-position-x: -205px;
-  background-position-y: -10px;
+  width: 30px;
+  fill: #ffffff;
 }
 
-.account-img {
-  background-image: url("../images/Logo-sprite.png");
-  background-repeat: no-repeat;
-  width: 40px;
+.top-section_img-account {
   height: 40px;
-  background-position-x: -235px;
+  width: 40px;
+  fill: #ffffff;
+}
+
+.top-section_img-menu {
+  display: none;
 }
 
 .header-wrapper__text {
   color: var(--color-general-white);
   font-size: 51px;
-  margin-top: 202px;
-  margin-bottom: 145px;
+  padding-top: 102px;
+  padding-bottom: 145px;
 }
 
 .header-search {
   display: flex;
   font-size: 18px;
-  flex-wrap: wrap;
 }
 
 .header-search-mob {
@@ -216,7 +219,11 @@ input {
   width: 100%;
 }
 
-input:focus {
+.input-wrapper input {
+  border: solid 3px transparent;
+}
+
+.input-wrapper input:focus {
   border: solid 3px #f5bd41;
 }
 
@@ -233,7 +240,7 @@ input:focus {
   display: flex;
   padding-top: 120px;
   justify-content: center;
-  gap: 15px;
+  gap: 16px;
 }
 
 .header-pay-phone svg {
@@ -379,18 +386,49 @@ input:focus {
     width: 100%;
   }
 
-  .container {
-    padding: 0;
+  .form-mobile-display {
+    display: flex;
+    flex-direction: column;
   }
 
-  header-wrapper__text {
+  .header-wrapper__text {
     font-size: 45px;
-    margin-top: 85px;
-    margin-bottom: 100px;
+    padding-top: 85px;
+    padding-bottom: 100px;
+  }
+
+  .top-section_img-night {
+    height: 16px;
+    width: 16px;
+  }
+
+  .top-section_img-account {
+    height: 24px;
+    width: 24px;
+  }
+
+  .top-section_img-menu{
+    display: flex;
+    height: 16px;
+    width: 24px;
+    fill: #ffffff;
   }
 
   .header-pay-phone {
-    padding-top: 40px;
+    padding-top: 32px;
+  }
+
+  .input-wrapper{
+    max-width: none;
+    border: 1px solid #383838;
+    border-radius: 4px;
+    height: 48px;
+  }
+
+  .form-button{
+    max-width: none;
+    border: 1px solid #383838;
+    border-radius: 4px;
   }
 
   .container-advantages {
@@ -411,12 +449,12 @@ input:focus {
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 630px) {
   :root {
     --col-widtth: calc(100% / 6);
   }
 
-  label{
+  label {
     position: absolute;
     color: black;
   }
@@ -455,9 +493,13 @@ input:focus {
 
   .border-input {
     border-radius: 4px;
+    padding: 16px 0 0 8px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #383838;
   }
 
-  .header-top-section{
+  .header-top-section {
     padding-top: 16px;
   }
 
@@ -465,7 +507,7 @@ input:focus {
     display: flex;
     height: 24px;
     width: 122px;
-    fill:#3077C6;
+    fill: #3077c6;
   }
 
   .header-search {
@@ -485,55 +527,39 @@ input:focus {
     padding-right: 17px;
   }
 
-  .check-in-out-form{
+  .check-in-out-form {
     display: flex;
     position: relative;
     flex-direction: row;
     gap: 8px;
   }
 
-  .check-out-position{
+  .check-out-position {
     position: absolute;
     top: 0;
-    right: 45px;
+    left: 8px;
+  }
+
+  .form-mobile-input-wrapper {
+    position: relative;
   }
 
   .rooms-form-mob {
     display: flex;
     flex-direction: row;
-    max-width: 312px;
     position: relative;
     background-color: #f3f3f4;
     border-radius: 4px;
   }
 
-  .rooms-form-mob-adults {
-    width: 100%;
-  }
-
-  .rooms-form-mob-children {
-    width: 100%;
-  }
-
-  .rooms-form-mob-room {
-    width: 100%;
-  }
-
-  .children-label-position{
+  .children-label-position {
     position: absolute;
     top: 0;
     right: 145px;
   }
 
-  .rooms-label-position{
-    position: absolute;
-    top: 0;
-    right: 45px;
-  }
-
-  .form-button-mob{
+  .form-button-mob {
     height: 48px;
-    max-width: 312px;
     width: 100%;
     text-align: center;
     background-color: #3077c6;
@@ -544,14 +570,14 @@ input:focus {
     height: 48px;
   }
 
-  .sentence {
+  .top-section-sentence {
     display: none;
   }
 
   .header-wrapper__text {
     font-size: 30px;
-    margin-top: 31px;
-    margin-bottom: 52px;
+    padding-top: 31px;
+    padding-bottom: 52px;
   }
 
   .advantages-box {
