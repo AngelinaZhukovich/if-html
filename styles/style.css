@@ -92,16 +92,18 @@ input:focus {
   width: 100%;
 }
 
-/*.color-line:hover:after {*/
-/*  content: "";*/
-/*  display: block;*/
-/*  margin: 0 auto;*/
-/*  position: absolute;*/
-/*  margin-top: 8px;*/
-/*  background-color: #f5bd41;*/
-/*  height: 4px;*/
-/*  width: 50px;*/
-/*}*/
+.color-line:hover:after {
+  content: "";
+  display: block;
+  /*margin: 0 auto;*/
+  position: absolute;
+  margin-top: 8px;
+  background-color: #f5bd41;
+  height: 4px;
+  width: 50px;
+  right: 50%;
+  transform: translate(50%);
+}
 
 .label {
   position: absolute;
@@ -159,6 +161,7 @@ input:focus {
   color: var(--color-general-white);
   font-size: 24px;
   text-decoration: none;
+  position: relative;
 }
 
 .top-section_img-night {
