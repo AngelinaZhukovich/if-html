@@ -319,31 +319,31 @@ input:focus {
   display: flex;
   justify-content: center;
   gap: 16px;
-  padding-bottom: 24px;
+  padding-bottom: 120px;
 }
 
 .houses-block_hotel {
-  background-image: url("/images/icons/icons_png/hotel.png");
-  height: 296px;
-  width: 296px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .houses-block_apartment {
-  background-image: url("/images/icons/icons_png/apartment.png");
-  height: 296px;
-  width: 296px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .houses-block_villa {
-  background-image: url("/images/icons/icons_png/villa.png");
-  height: 296px;
-  width: 296px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .houses-block_hostel {
-  background-image: url("/images/icons/icons_png/hostel.png");
-  height: 296px;
-  width: 296px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .footer {
