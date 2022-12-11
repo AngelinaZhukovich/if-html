@@ -95,7 +95,6 @@ input:focus {
 .color-line:hover:after {
   content: "";
   display: block;
-  /*margin: 0 auto;*/
   position: absolute;
   margin-top: 8px;
   background-color: #f5bd41;
