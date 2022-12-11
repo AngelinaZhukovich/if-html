@@ -33,7 +33,7 @@ h2 {
 label {
   color: var(--color-general-white);
 }
-/*TODO добавить классы input */
+
 input {
   height: 100%;
   border-radius: 8px;
@@ -296,14 +296,54 @@ input:focus {
 }
 
 .img-advantages ._svg {
-  /*width: 91px;*/
-  /*height: 75px;*/
   max-width: 100px;
   aspect-ratio: 1/1;
 }
 
 ._svg ._headphones {
   max-width: 75px;
+}
+
+.houses-block {
+  background-color: #eaf0f9;
+  display: flex;
+  flex-direction: column;
+}
+
+.houses-block_title {
+  padding-top: 120px;
+  padding-bottom: 105px;
+}
+
+.houses-block_container {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding-bottom: 24px;
+}
+
+.houses-block_hotel {
+  background-image: url("/images/icons/icons_png/hotel.png");
+  height: 296px;
+  width: 296px;
+}
+
+.houses-block_apartment {
+  background-image: url("/images/icons/icons_png/apartment.png");
+  height: 296px;
+  width: 296px;
+}
+
+.houses-block_villa {
+  background-image: url("/images/icons/icons_png/villa.png");
+  height: 296px;
+  width: 296px;
+}
+
+.houses-block_hostel {
+  background-image: url("/images/icons/icons_png/hostel.png");
+  height: 296px;
+  width: 296px;
 }
 
 .footer {
@@ -409,7 +449,7 @@ input:focus {
     width: 24px;
   }
 
-  .top-section_img-menu{
+  .top-section_img-menu {
     display: flex;
     height: 16px;
     width: 24px;
@@ -420,14 +460,14 @@ input:focus {
     padding-top: 32px;
   }
 
-  .input-wrapper{
+  .input-wrapper {
     max-width: none;
     border: 1px solid #383838;
     border-radius: 4px;
     height: 48px;
   }
 
-  .form-button{
+  .form-button {
     max-width: none;
     border: 1px solid #383838;
     border-radius: 4px;
