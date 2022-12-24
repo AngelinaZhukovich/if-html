@@ -2,7 +2,261 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="lesson 10" />
+    <meta name="keywords" content="CSS" />
+    <meta name="author" content="Angelina Zhukovich" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="icon" href="images/icons/favicon.ico" />
     <title>Title</title>
   </head>
-  <body></body>
+  <body>
+    <div class="top-section">
+      <div class="container container-search-mob">
+        <header class="header-top-section">
+          <div>
+            <svg class="logo-img-lg logo-img-s">
+              <use href="images/icons/icons_svg/sprite.svg#logo-vector" />
+            </svg>
+          </div>
+          <div class="top-section-settings">
+            <div class="top-section-sentence">
+              <a class="color-line" href="#">Stays</a>
+              <a class="color-line" href="#">Attractions</a>
+            </div>
+            <div class="top-section-personal">
+              <svg class="top-section_img-night">
+                <use href="images/icons/icons_svg/sprite.svg#night" />
+              </svg>
+              <svg class="top-section_img-account">
+                <use href="images/icons/icons_svg/sprite.svg#account" />
+              </svg>
+              <svg class="top-section_img-menu">
+                <use href="images/icons/icons_svg/sprite.svg#menu" />
+              </svg>
+            </div>
+          </div>
+        </header>
+        <h1 class="header-wrapper__text">
+          Discover stays <br />
+          to live, work or just relax
+        </h1>
+        <form class="form header-search form-mobile-display">
+          <div class="input-wrapper city-wrapper col-md-12">
+            <input
+              id="city"
+              type="text"
+              name="search-city"
+              placeholder="New York"
+              required
+            />
+            <label class="label" for="city">
+              Your destination or hotel name
+            </label>
+          </div>
+          <div class="input-wrapper calendar-wrapper col-md-12">
+            <input
+              id="calendar"
+              type="text"
+              name="search-date"
+              placeholder="Tue 15 Sept — Sat 19 Sept"
+              required
+            />
+            <label class="label" for="calendar"> Check-in — Check-out </label>
+          </div>
+          <div class="input-wrapper rooms-wrapper">
+            <input
+              id="room"
+              type="number"
+              name="search-room"
+              placeholder="2 Adults — 0 Children — 1 Room"
+              required
+            />
+          </div>
+          <label for="room"></label>
+          <button class="form-button col-md-12">Search</button>
+        </form>
+        <form class="header-search-mob">
+          <div>
+            <input
+              class="col-s-6 input-height border-input"
+              id="city-mob"
+              type="search"
+              name="search-city"
+              placeholder="Your destination or hotel name"
+              required
+            />
+            <label class="label" for="city-mob"> </label>
+          </div>
+          <div class="check-in-out-form">
+            <div class="form-mobile-input-wrapper col-s-3">
+              <input
+                class="input-height border-input col-s-6"
+                id="check-in"
+                name="check-in"
+                placeholder="Tue 15 Sept 2020"
+              />
+              <label class="check-out-position" for="check-in">
+                Check-in date
+              </label>
+            </div>
+            <div class="form-mobile-input-wrapper col-s-3">
+              <input
+                class="input-height border-input col-s-6"
+                id="check-out"
+                name="check-out"
+                placeholder="Sat 19 Sept 2020"
+              />
+              <label class="check-out-position" for="check-out">
+                Check-out date
+              </label>
+            </div>
+          </div>
+          <div class="check-in-out-form col-s-6">
+            <div class="form-mobile-input-wrapper col-s-2">
+              <input class="input-height col-s-6" id="adults" placeholder="2" />
+              <label class="check-out-position" for="adults"> Adults </label>
+            </div>
+            <div class="form-mobile-input-wrapper col-s-2">
+              <input
+                class="input-height col-s-6"
+                id="children"
+                placeholder="0"
+              />
+              <label class="check-out-position" for="children">
+                Children
+              </label>
+            </div>
+            <div class="form-mobile-input-wrapper col-s-2">
+              <input
+                class="input-height col-s-6"
+                id="rooms-mob"
+                placeholder="1"
+              />
+              <label class="check-out-position" for="rooms-mob"> Rooms </label>
+            </div>
+          </div>
+          <button class="form-button-mob">Search</button>
+        </form>
+        <div class="header-pay-phone">
+          <a href="https://play.google.com/" target="_blank">
+            <svg>
+              <use href="images/icons/icons_svg/sprite.svg#google-pay" />
+            </svg>
+          </a>
+          <a href="https://apps.apple.com/" target="_blank">
+            <svg>
+              <use href="images/icons/icons_svg/sprite.svg#apple-pay" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="advantages-box container">
+      <div class="advantages">
+        <h2 class="large-subtitle color-line">What do we offer</h2>
+      </div>
+      <div class="container-advantages">
+        <div class="img-advantages _svg _headphones col-lg-3 col-md-6 col-s-6">
+          <svg class="img-advantages _svg">
+            <use href="images/icons/icons_svg/sprite.svg#headphones" />
+          </svg>
+          <p>Support 24/7</p>
+        </div>
+        <div
+          class="img-advantages _svg _communication col-lg-3 col-md-6 col-s-6">
+          <svg class="img-advantages _svg">
+            <use href="../images/icons/icons_svg/sprite.svg#communication" />
+          </svg>
+          <p>Communicate directly</p>
+        </div>
+        <div class="img-advantages _svg _computer col-lg-3 col-md-6 col-s-6">
+          <svg class="img-advantages _svg">
+            <use href="images/icons/icons_svg/sprite.svg#computer" />
+          </svg>
+          <p>Book online</p>
+        </div>
+        <div class="img-advantages _svg _like col-lg-3 col-md-6 col-s-6">
+          <svg class="img-advantages _svg">
+            <use href="images/icons/icons_svg/sprite.svg#like" />
+          </svg>
+          <p>Real guest reviews</p>
+        </div>
+      </div>
+    </div>
+    <div class="houses-block">
+      <div class="container">
+        <h2 class="houses-block_title">Homes guests loves</h2>
+        <div class="houses-block_container">
+          <div class="houses-block_hotel">
+            <img src="/images/icons/icons_png/hotel.png" alt="hotel" />
+            <a href="#">Hotel Leopold</a>
+            <p>Saint Petersburg, Russia</p>
+          </div>
+          <div class="houses-block_apartment">
+            <img src="/images/icons/icons_png/apartment.png" alt="apartment" />
+            <a href="#">Apartment Sunshine</a>
+            <p>Santa Cruz de Tenerife, Spain</p>
+            <div class="min-circle">
+              <svg class="min-arrow">
+                <use href="images/icons/icons_svg/sprite.svg#circle" />
+              </svg>
+            </div>
+          </div>
+          <div class="houses-block_villa">
+            <img src="/images/icons/icons_png/villa.png" alt="villa" />
+            <a href="#">Villa Kunerad</a>
+            <p>Vysokie Tatry, Slowakia</p>
+          </div>
+          <div class="houses-block_hostel">
+            <img src="/images/icons/icons_png/hostel.png" alt="hostel" />
+            <a href="#">Hostel Friendship</a>
+            <p>Berlin, Germany</p>
+            <div class="circle">
+              <svg class="arrow">
+                <use href="images/icons/icons_svg/sprite.svg#circle" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <svg class="logo-img">
+        <use href="images/icons/icons_svg/sprite.svg#logo-vector" />
+      </svg>
+      <div class="container">
+        <div class="footer-wrapper">
+          <ul class="list-item col-lg-4 col-md-3 col-s-1">
+            <li class="list-heading">About</li>
+            <li class="list-item-none"><a href="#">How Triphouse works</a></li>
+            <li class="list-item-none"><a href="#">Careers</a></li>
+            <li class="list-item-none"><a href="#">Privacy</a></li>
+            <li class="list-item-none"><a href="#">Terms </a></li>
+          </ul>
+          <ul class="list-item col-lg-4 col-md-4 col-s-2">
+            <li class="list-heading">Property types</li>
+            <li class="list-item-none"><a href="#">Guest houses</a></li>
+            <li class="list-item-none"><a href="#">Hotels</a></li>
+            <li class="list-item-none"><a href="#">Apartments</a></li>
+            <li class="list-item-none"><a href="#">Villas</a></li>
+            <li class="list-item-none"><a href="#">Holiday homes </a></li>
+            <li class="list-item-none"><a href="#">Hostels</a></li>
+          </ul>
+          <ul class="list-item col-lg-4 col-md-3 col-s-1">
+            <li class="list-heading">Support</li>
+            <li class="list-item-none">
+              <a href="#">Contact Customer Service</a>
+            </li>
+            <li class="list-item-none"><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-info col-lg-12">
+            © 2022Triphouse, Inc. All rights reserved
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
