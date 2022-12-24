@@ -344,6 +344,29 @@ input:focus {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  position: relative;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #F3F3F4;
+  position: absolute;
+  float: right;
+  top: 32%;
+  right: -7%;
+  box-shadow: 4px 5px 10px black;
+}
+
+.arrow {
+  height: 19px;
+  width: 7px;
+  transform: translate(18px, 10px);
+}
+
+.min-arrow {
+  display: none;
 }
 
 .footer {
@@ -377,6 +400,51 @@ input:focus {
   padding-bottom: 120px;
   font-size: 14px;
   font-weight: normal;
+}
+
+@media (max-width: 1258px) {
+  .houses-block_villa {
+    display: none;
+  }
+}
+
+@media (max-width: 950px) {
+  .houses-block_hotel  img{
+    height: 155px;
+    width: 156px;
+  }
+
+  .houses-block_apartment{
+    position: relative;
+  }
+
+  .houses-block_apartment  img{
+    height: 155px;
+    width: 156px;
+  }
+
+  .houses-block_hostel {
+    display: none;
+  }
+
+  .min-circle{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #F3F3F4;
+    position: absolute;
+    float: right;
+    top: 24%;
+    right: 20%;
+    box-shadow: 4px 5px 10px black;
+  }
+
+  .min-arrow {
+    display: inline-block;
+    height: 13px;
+    width: 4px;
+    transform: translate(14px, 6px);
+  }
 }
 
 @media (max-width: 768px) {
